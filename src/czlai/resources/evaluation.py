@@ -30,7 +30,7 @@ class EvaluationResource(SyncAPIResource):
         This property can be used as a prefix for any HTTP method call to return the
         the raw response object instead of the parsed content.
 
-        For more information, see https://www.github.com/stainless-sdks/czlai-python#accessing-raw-response-data-eg-headers
+        For more information, see https://www.github.com/CZL-AI/czlai-python#accessing-raw-response-data-eg-headers
         """
         return EvaluationResourceWithRawResponse(self)
 
@@ -39,7 +39,7 @@ class EvaluationResource(SyncAPIResource):
         """
         An alternative to `.with_raw_response` that doesn't eagerly read the response body.
 
-        For more information, see https://www.github.com/stainless-sdks/czlai-python#with_streaming_response
+        For more information, see https://www.github.com/CZL-AI/czlai-python#with_streaming_response
         """
         return EvaluationResourceWithStreamingResponse(self)
 
@@ -99,7 +99,7 @@ class AsyncEvaluationResource(AsyncAPIResource):
         This property can be used as a prefix for any HTTP method call to return the
         the raw response object instead of the parsed content.
 
-        For more information, see https://www.github.com/stainless-sdks/czlai-python#accessing-raw-response-data-eg-headers
+        For more information, see https://www.github.com/CZL-AI/czlai-python#accessing-raw-response-data-eg-headers
         """
         return AsyncEvaluationResourceWithRawResponse(self)
 
@@ -108,7 +108,7 @@ class AsyncEvaluationResource(AsyncAPIResource):
         """
         An alternative to `.with_raw_response` that doesn't eagerly read the response body.
 
-        For more information, see https://www.github.com/stainless-sdks/czlai-python#with_streaming_response
+        For more information, see https://www.github.com/CZL-AI/czlai-python#with_streaming_response
         """
         return AsyncEvaluationResourceWithStreamingResponse(self)
 
