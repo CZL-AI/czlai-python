@@ -127,21 +127,22 @@ class Czlai(SyncAPIClient):
             )
         self.bearer_token = bearer_token
 
-        if username is None:
-            username = os.environ.get("BASIC_AUTH_USERNAME")
-        if username is None:
-            raise CzlaiError(
-                "The username client option must be set either by passing username to the client or by setting the BASIC_AUTH_USERNAME environment variable"
-            )
-        self.username = username
+        # FIXME: This is not used
+        # if username is None:
+        #     username = os.environ.get("BASIC_AUTH_USERNAME")
+        # if username is None:
+        #     raise CzlaiError(
+        #         "The username client option must be set either by passing username to the client or by setting the BASIC_AUTH_USERNAME environment variable"
+        #     )
+        # self.username = username
 
-        if password is None:
-            password = os.environ.get("BASIC_AUTH_PASSWORD")
-        if password is None:
-            raise CzlaiError(
-                "The password client option must be set either by passing password to the client or by setting the BASIC_AUTH_PASSWORD environment variable"
-            )
-        self.password = password
+        # if password is None:
+        #     password = os.environ.get("BASIC_AUTH_PASSWORD")
+        # if password is None:
+        #     raise CzlaiError(
+        #         "The password client option must be set either by passing password to the client or by setting the BASIC_AUTH_PASSWORD environment variable"
+        #     )
+        # self.password = password
 
         if base_url is None:
             base_url = os.environ.get("CZLAI_BASE_URL")
