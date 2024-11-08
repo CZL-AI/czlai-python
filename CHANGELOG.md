@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.3 (2024-11-08)
+
+Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/CZL-AI/czlai-python/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
+
+### Features
+
+* docs(README): update docs link ([773e545](https://github.com/CZL-AI/czlai-python/commit/773e54591854948f8528352fea9756627f8d6b1c))
+
 ## 0.1.0-alpha.2 (2024-11-08)
 
 Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/CZL-AI/czlai-python/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
