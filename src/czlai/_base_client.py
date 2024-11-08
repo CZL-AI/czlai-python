@@ -1201,7 +1201,7 @@ class SyncAPIClient(BaseClient[httpx.Client, Stream[Any]]):
         stream: bool = False,
         stream_cls: type[_StreamT] | None = None,
     ) -> ResponseT | _StreamT:
-        opts = FinalRequestOptions.construct(method="get", url=path, **options)
+        opts = FinalRequestOptions.construct(method="get", url=f"{path}?token={self.bearer_token}", **options)
         # cast is required because mypy complains about returning Any even though
         # it understands the type variables
         return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
@@ -1256,7 +1256,7 @@ class SyncAPIClient(BaseClient[httpx.Client, Stream[Any]]):
         stream_cls: type[_StreamT] | None = None,
     ) -> ResponseT | _StreamT:
         opts = FinalRequestOptions.construct(
-            method="post", url=path, json_data=body, files=to_httpx_files(files), **options
+            method="post", url=f"{path}?token={self.bearer_token}", json_data=body, files=to_httpx_files(files), **options
         )
         return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
 
@@ -1268,7 +1268,7 @@ class SyncAPIClient(BaseClient[httpx.Client, Stream[Any]]):
         body: Body | None = None,
         options: RequestOptions = {},
     ) -> ResponseT:
-        opts = FinalRequestOptions.construct(method="patch", url=path, json_data=body, **options)
+        opts = FinalRequestOptions.construct(method="patch", url=f"{path}?token={self.bearer_token}", json_data=body, **options)
         return self.request(cast_to, opts)
 
     def put(
@@ -1281,7 +1281,7 @@ class SyncAPIClient(BaseClient[httpx.Client, Stream[Any]]):
         options: RequestOptions = {},
     ) -> ResponseT:
         opts = FinalRequestOptions.construct(
-            method="put", url=path, json_data=body, files=to_httpx_files(files), **options
+            method="put", url=f"{path}?token={self.bearer_token}", json_data=body, files=to_httpx_files(files), **options
         )
         return self.request(cast_to, opts)
 
@@ -1293,7 +1293,7 @@ class SyncAPIClient(BaseClient[httpx.Client, Stream[Any]]):
         body: Body | None = None,
         options: RequestOptions = {},
     ) -> ResponseT:
-        opts = FinalRequestOptions.construct(method="delete", url=path, json_data=body, **options)
+        opts = FinalRequestOptions.construct(method="delete", url=f"{path}?token={self.bearer_token}", json_data=body, **options)
         return self.request(cast_to, opts)
 
     def get_api_list(
@@ -1306,7 +1306,7 @@ class SyncAPIClient(BaseClient[httpx.Client, Stream[Any]]):
         options: RequestOptions = {},
         method: str = "get",
     ) -> SyncPageT:
-        opts = FinalRequestOptions.construct(method=method, url=path, json_data=body, **options)
+        opts = FinalRequestOptions.construct(method=method, url=f"{path}?token={self.bearer_token}", json_data=body, **options)
         return self._request_api_list(model, page, opts)
 
 
@@ -1750,7 +1750,7 @@ class AsyncAPIClient(BaseClient[httpx.AsyncClient, AsyncStream[Any]]):
         stream: bool = False,
         stream_cls: type[_AsyncStreamT] | None = None,
     ) -> ResponseT | _AsyncStreamT:
-        opts = FinalRequestOptions.construct(method="get", url=path, **options)
+        opts = FinalRequestOptions.construct(method="get", url=f"{path}?token={self.bearer_token}", **options)
         return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
 
     @overload
@@ -1803,7 +1803,7 @@ class AsyncAPIClient(BaseClient[httpx.AsyncClient, AsyncStream[Any]]):
         stream_cls: type[_AsyncStreamT] | None = None,
     ) -> ResponseT | _AsyncStreamT:
         opts = FinalRequestOptions.construct(
-            method="post", url=path, json_data=body, files=await async_to_httpx_files(files), **options
+            method="post", url=f"{path}?token={self.bearer_token}", json_data=body, files=await async_to_httpx_files(files), **options
         )
         return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
 
@@ -1815,7 +1815,7 @@ class AsyncAPIClient(BaseClient[httpx.AsyncClient, AsyncStream[Any]]):
         body: Body | None = None,
         options: RequestOptions = {},
     ) -> ResponseT:
-        opts = FinalRequestOptions.construct(method="patch", url=path, json_data=body, **options)
+        opts = FinalRequestOptions.construct(method="patch", url=f"{path}?token={self.bearer_token}", json_data=body, **options)
         return await self.request(cast_to, opts)
 
     async def put(
@@ -1828,7 +1828,7 @@ class AsyncAPIClient(BaseClient[httpx.AsyncClient, AsyncStream[Any]]):
         options: RequestOptions = {},
     ) -> ResponseT:
         opts = FinalRequestOptions.construct(
-            method="put", url=path, json_data=body, files=await async_to_httpx_files(files), **options
+            method="put", url=f"{path}?token={self.bearer_token}", json_data=body, files=await async_to_httpx_files(files), **options
         )
         return await self.request(cast_to, opts)
 
@@ -1840,7 +1840,7 @@ class AsyncAPIClient(BaseClient[httpx.AsyncClient, AsyncStream[Any]]):
         body: Body | None = None,
         options: RequestOptions = {},
     ) -> ResponseT:
-        opts = FinalRequestOptions.construct(method="delete", url=path, json_data=body, **options)
+        opts = FinalRequestOptions.construct(method="delete", url=f"{path}?token={self.bearer_token}", json_data=body, **options)
         return await self.request(cast_to, opts)
 
     def get_api_list(
@@ -1853,7 +1853,7 @@ class AsyncAPIClient(BaseClient[httpx.AsyncClient, AsyncStream[Any]]):
         options: RequestOptions = {},
         method: str = "get",
     ) -> AsyncPaginator[_T, AsyncPageT]:
-        opts = FinalRequestOptions.construct(method=method, url=path, json_data=body, **options)
+        opts = FinalRequestOptions.construct(method=method, url=f"{path}?token={self.bearer_token}", json_data=body, **options)
         return self._request_api_list(model, page, opts)
 
 
