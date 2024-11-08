@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.0-alpha.2 (2024-11-08)
+
+Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/CZL-AI/czlai-python/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
+
+### Features
+
+* refactor(czlai): Add bearer token to request URL in API client ([c59f387](https://github.com/CZL-AI/czlai-python/commit/c59f3871918008302bf38550c4861f9b641981c2))
+
+
+### Chores
+
+* rebuild project due to codegen change ([#8](https://github.com/CZL-AI/czlai-python/issues/8)) ([75bcb24](https://github.com/CZL-AI/czlai-python/commit/75bcb24ea952f71238847f2a7d19bdafae685d85))
+
 ## 0.1.0-alpha.1 (2024-10-29)
 
 Full Changelog: [v0.0.1-alpha.1...v0.1.0-alpha.1](https://github.com/CZL-AI/czlai-python/compare/v0.0.1-alpha.1...v0.1.0-alpha.1)
