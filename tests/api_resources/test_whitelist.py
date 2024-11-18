@@ -55,7 +55,7 @@ class TestWhitelist:
     @parametrize
     def test_method_save_data_with_all_params(self, client: Czlai) -> None:
         whitelist = client.whitelist.save_data(
-            save_data=["string", "string", "string"],
+            save_data=["string"],
         )
         assert whitelist is None
 
@@ -123,7 +123,7 @@ class TestAsyncWhitelist:
     @parametrize
     async def test_method_save_data_with_all_params(self, async_client: AsyncCzlai) -> None:
         whitelist = await async_client.whitelist.save_data(
-            save_data=["string", "string", "string"],
+            save_data=["string"],
         )
         assert whitelist is None
 

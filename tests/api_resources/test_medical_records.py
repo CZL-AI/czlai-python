@@ -97,9 +97,9 @@ class TestMedicalRecords:
     def test_method_create_list_with_all_params(self, client: Czlai) -> None:
         medical_record = client.medical_records.create_list(
             limit=0,
-            module_type=[0, 0, 0],
+            module_type=[0],
             page=0,
-            pet_profile_id=[0, 0, 0],
+            pet_profile_id=[0],
         )
         assert_matches_type(MedicalRecordCreateListResponse, medical_record, path=["response"])
 
@@ -237,9 +237,9 @@ class TestAsyncMedicalRecords:
     async def test_method_create_list_with_all_params(self, async_client: AsyncCzlai) -> None:
         medical_record = await async_client.medical_records.create_list(
             limit=0,
-            module_type=[0, 0, 0],
+            module_type=[0],
             page=0,
-            pet_profile_id=[0, 0, 0],
+            pet_profile_id=[0],
         )
         assert_matches_type(MedicalRecordCreateListResponse, medical_record, path=["response"])
 

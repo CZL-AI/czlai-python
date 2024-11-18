@@ -20,7 +20,7 @@ class TestUserAdvices:
         user_advice = client.user_advices.create(
             advice_type="advice_type",
             description="description",
-            image_list=["string", "string", "string"],
+            image_list=["string"],
         )
         assert user_advice is None
 
@@ -29,7 +29,7 @@ class TestUserAdvices:
         response = client.user_advices.with_raw_response.create(
             advice_type="advice_type",
             description="description",
-            image_list=["string", "string", "string"],
+            image_list=["string"],
         )
 
         assert response.is_closed is True
@@ -42,7 +42,7 @@ class TestUserAdvices:
         with client.user_advices.with_streaming_response.create(
             advice_type="advice_type",
             description="description",
-            image_list=["string", "string", "string"],
+            image_list=["string"],
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -61,7 +61,7 @@ class TestAsyncUserAdvices:
         user_advice = await async_client.user_advices.create(
             advice_type="advice_type",
             description="description",
-            image_list=["string", "string", "string"],
+            image_list=["string"],
         )
         assert user_advice is None
 
@@ -70,7 +70,7 @@ class TestAsyncUserAdvices:
         response = await async_client.user_advices.with_raw_response.create(
             advice_type="advice_type",
             description="description",
-            image_list=["string", "string", "string"],
+            image_list=["string"],
         )
 
         assert response.is_closed is True
@@ -83,7 +83,7 @@ class TestAsyncUserAdvices:
         async with async_client.user_advices.with_streaming_response.create(
             advice_type="advice_type",
             description="description",
-            image_list=["string", "string", "string"],
+            image_list=["string"],
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
