@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.1.0-alpha.4 (2024-11-22)
+
+Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/CZL-AI/czlai-python/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)
+
+### Chores
+
+* **internal:** fix compat model_dump method when warnings are passed ([#17](https://github.com/CZL-AI/czlai-python/issues/17)) ([e4e6d50](https://github.com/CZL-AI/czlai-python/commit/e4e6d50fa26706b601ee003d7e70a9b0f24492e4))
+* rebuild project due to codegen change ([#13](https://github.com/CZL-AI/czlai-python/issues/13)) ([654605e](https://github.com/CZL-AI/czlai-python/commit/654605e20a39dca97bcd51d11edff4ac510ca2cd))
+* rebuild project due to codegen change ([#15](https://github.com/CZL-AI/czlai-python/issues/15)) ([9c7f95b](https://github.com/CZL-AI/czlai-python/commit/9c7f95b397bd35058e46df7cd273444bec53e103))
+* rebuild project due to codegen change ([#16](https://github.com/CZL-AI/czlai-python/issues/16)) ([2b9734c](https://github.com/CZL-AI/czlai-python/commit/2b9734ceed8b55ff808e9da4c56fc617743b6b8d))
+
+
+### Documentation
+
+* add info log level to readme ([#18](https://github.com/CZL-AI/czlai-python/issues/18)) ([0e1f0ab](https://github.com/CZL-AI/czlai-python/commit/0e1f0ab3f6c434065fff877406f8fec93387eba1))
+
 ## 0.1.0-alpha.3 (2024-11-08)
 
 Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/CZL-AI/czlai-python/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
