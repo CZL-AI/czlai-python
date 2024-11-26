@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.5 (2024-11-26)
+
+Full Changelog: [v0.1.0-alpha.4...v0.1.0-alpha.5](https://github.com/CZL-AI/czlai-python/compare/v0.1.0-alpha.4...v0.1.0-alpha.5)
+
+### Chores
+
+* **internal:** codegen related update ([#20](https://github.com/CZL-AI/czlai-python/issues/20)) ([f43f77b](https://github.com/CZL-AI/czlai-python/commit/f43f77b7d711e7852c47a38f3d03f98cfb7a15be))
+
 ## 0.1.0-alpha.4 (2024-11-22)
 
 Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/CZL-AI/czlai-python/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)
