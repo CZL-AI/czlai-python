@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.6 (2024-12-17)
+
+Full Changelog: [v0.1.0-alpha.5...v0.1.0-alpha.6](https://github.com/CZL-AI/czlai-python/compare/v0.1.0-alpha.5...v0.1.0-alpha.6)
+
+### Features
+
+* Update pyproject.toml ([147d2d4](https://github.com/CZL-AI/czlai-python/commit/147d2d451f03ebf470eec2e3ce89e9b8fbf1b87e))
+
 ## 0.1.0-alpha.5 (2024-11-26)
 
 Full Changelog: [v0.1.0-alpha.4...v0.1.0-alpha.5](https://github.com/CZL-AI/czlai-python/compare/v0.1.0-alpha.4...v0.1.0-alpha.5)
